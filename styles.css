@@ -4,9 +4,20 @@
 
 }
 
+body {
+
+  background-color: aqua;
+
+
+
+}
+
 
 h1 {
 text-align: center;
+font-size: 5vw;
+
+
 
 
 
@@ -14,15 +25,53 @@ text-align: center;
 }
 
 section {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
 
 
 }
 
-.bildeOne {
-display: flex;
+
+#bildeOne {
+justify-content: center;
+max-width: 25vw;
 align-items: center;
+
+}
+
+footer {
+  font-size: 3vw;
+  text-align: center;
+
+
+
+}
+
+/* Jeg gjør dette i media querie slik at teksten på siden blir en annen farge og i tilegg endrer view-width slik at den matcher mer for en mobilskjerm*/
+@media all and (max-width: 768px) {
+  body {
+    color: blueviolet
+
+  }
+
+  h1 {
+    font-size: 10vw;
+
+  }
+
+  footer {
+    font-size: 4vw;
+
+
+  }
+
+}
+
+
+
+
+
+  }
 
 
 }
