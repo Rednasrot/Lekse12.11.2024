@@ -6,21 +6,30 @@
 
 body {
 
-  background-color: aqua;
+  background-color: grey;
 
 
 
 }
 
+img {
+  
+  max-width: 30vw;
+
+
+}
 
 h1 {
+  
 text-align: center;
 font-size: 5vw;
 
 
+}
 
-
-
+h2 {
+  text-align: center;
+  font-size: 3vw;
 
 }
 
@@ -31,31 +40,58 @@ section {
 
 }
 
+footer {
+
+
+
+}
+
+/*Dette har jeg gjort slik at tingene blir sentrert og går i en kolonne nedover*/
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
 
 #bildeOne {
 justify-content: center;
-max-width: 25vw;
+width: fit-content;
 align-items: center;
 
 }
 
-footer {
-  font-size: 3vw;
+p {
+  font-size: 1.5vw;
   text-align: center;
 
 
 
 }
 
-/* Jeg gjør dette i media querie slik at teksten på siden blir en annen farge og i tilegg endrer view-width slik at den matcher mer for en mobilskjerm*/
+/* Jeg gjør dette i media querie slik at teksten og bakgrunnen på siden blir en annen farge og i tilegg endrer view-width slik at den matcher mer for en mobilskjerm.
+Samt at*/
 @media all and (max-width: 768px) {
   body {
+    background-color: aqua;
     color: blueviolet
 
   }
 
   h1 {
     font-size: 10vw;
+    text-align: center;
+
+  }
+
+  h2 {
+    font-size: 5vw;
+    align-items: center;
+    text-align: center;
+
 
   }
 
@@ -64,7 +100,12 @@ footer {
 
 
   }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
 
+
+  }
 }
 
 
